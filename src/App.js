@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Button } from './styles';
+import { Container, Button, List } from './styles';
 
 import People from './assets/people.svg';
 
@@ -21,11 +21,11 @@ const App = () => {
         Comentar
       </Button>
 
-      <ul>
+      <List>
         {allComments.map((comment, index) => (
           <li key={index}>{comment}</li>
         ))}
-      </ul>
+      </List>
     </Container>
   );
 };

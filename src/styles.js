@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background: #3936c0;
-  height: 100vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  height: 100vh;
 
   img {
     margin-top: 50px;
@@ -36,7 +36,7 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-  margin-top: 50px;
+  margin-top: 30px;
   background: ${(props) => (props.isOn ? '#000000' : 'gray')};
   color: #fff;
   border-radius: 10px;
@@ -45,4 +45,23 @@ export const Button = styled.button`
   border: none;
   font-size: 1.1rem;
   cursor: pointer;
+`;
+
+export const List = styled.ul`
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  overflow-y: hidden;
+  height: 100%;
+
+  li {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.14);
+    padding: 1rem;
+    border-radius: 5px;
+  }
 `;
