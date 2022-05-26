@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Button } from './styles';
 
 import People from './assets/people.svg';
 
@@ -14,7 +15,7 @@ const App = () => {
     <div>
       <img src={People} alt="Pessoas conversando" />
       <textarea onChange={({ target }) => setComment(target.value)}></textarea>
-      <button onClick={handleClick}>Comentar</button>
+      <Button onClick={handleClick}>Comentar</Button>
 
       <ul>
         {allComments.map((comment, index) => (
